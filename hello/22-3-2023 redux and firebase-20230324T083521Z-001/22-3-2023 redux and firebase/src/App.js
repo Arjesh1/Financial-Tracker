@@ -10,7 +10,7 @@ import { PrivateRoute } from "./components/private-route/PrivateRoute";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./firebase/firebase-config";
 import { useDispatch } from "react-redux";
-import { setUser } from "./pages/register-login/UserSlice";
+import { setUser } from "./pages/register-login/userSlice";
 
 function App() {
   const dispatch = useDispatch();

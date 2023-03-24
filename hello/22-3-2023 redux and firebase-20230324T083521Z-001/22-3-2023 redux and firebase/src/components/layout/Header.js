@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { auth } from "../../firebase/firebase-config";
-import { setUser } from "../../pages/register-login/UserSlice";
+import { setUser } from "../../pages/register-login/userSlice";
 
 export const Header = () => {
   const dispatch = useDispatch();

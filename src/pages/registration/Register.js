@@ -8,8 +8,12 @@ import { auth, db } from '../../firebase/firebase.config';
 import { Spinner } from 'react-bootstrap';
 import { doc, setDoc } from "firebase/firestore"; 
 import { useNavigate } from 'react-router-dom';
+import { setUser } from '../register-login/UserSlice';
+import { useDispatch } from 'react-redux';
 
 const Register = () => {
+
+  const dispatch = useDispatch()
   const navigate = useNavigate()
 
     const [frmDt, setFrmDt] = useState({})
@@ -55,6 +59,9 @@ const Register = () => {
         lName: frmDt.lname,
         email: user.email,
       });
+
+      //set data to redux store
+      dispatch(setUser(user))
 
     toast.success("Registration Successful")
     navigate("/dashboard")

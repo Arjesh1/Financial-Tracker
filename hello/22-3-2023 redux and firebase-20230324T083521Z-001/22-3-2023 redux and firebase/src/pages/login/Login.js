@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { CustomInput } from "../../components/custom-input/CustomInput";
 import { auth } from "../../firebase/firebase-config";
-import { setUser } from "../register-login/UserSlice";
+import { setUser } from "../register-login/userSlice";
 
 const Login = () => {
   const navigate = useNavigate();
