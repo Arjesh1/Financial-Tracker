@@ -22,9 +22,9 @@ export const TransTable = () => {
         <tbody>
           <tr>
             <td>1</td>
-            <td>gkjhlkj</td>
-            <td>kjh</td>
-            <td>lkhjl</td>
+            <td>Salary</td>
+            <td>$800</td>
+            <td>2023-03-03</td>
             <td>
               <Button variant="danger">
                 <i className="fa-sharp fa-solid fa-trash"></i>

@@ -42,7 +42,7 @@ export const TransForm = () => {
             <CustomInput
               onChange={handleOnChange}
               name="name"
-              placeholder="Salary"
+              placeholder="Salary / Grocery"
               required={true}
             />
           </Col>
@@ -51,7 +51,7 @@ export const TransForm = () => {
               onChange={handleOnChange}
               name="amount"
               type="number"
-              placeholder="100"
+              placeholder="$ 100"
               required
               min="1"
             />
@@ -66,7 +66,7 @@ export const TransForm = () => {
           </Col>
           <Col md="2">
             <Form.Group className="mb-3 d-grid">
-              <Button variant="warning" type="submit">
+              <Button variant="info" type="submit">
                 Add{" "}
               </Button>
             </Form.Group>
